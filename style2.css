@@ -1,0 +1,616 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #ffffff;
+    color: #222222;
+    line-height: 1.7;
+}
+
+
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/*this would be the side bar section*/
+.sidebar {
+    width: 250px;
+    border-right: 1px solid #e5e5e5;
+    padding: 36px 20px;
+    flex-shrink: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.sidebar .logo {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.sidebar .subtitle {
+    font-size: 11px;
+    color: #aaa;
+    font-family: sans-serif;
+    margin-bottom: 36px;
+}
+
+.sidebar .nav-group {
+    margin-bottom: 24px;
+}
+
+.sidebar .nav-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #bbb;
+    font-family: sans-serif;
+    padding: 0 14px;
+    margin-bottom: 6px;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 8px 14px;
+    margin-bottom: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #666;
+    font-size: 13px;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: all 0.15s;
+}
+
+.sidebar nav a:hover {
+    background: #eee;
+    color: #111;
+}
+
+.sidebar nav a.active {
+    background: #111;
+    color: #fff;
+}
+
+.sidebar .footer-note {
+    margin-top: auto;
+    font-size: 11px;
+    color: #ccc;
+    font-family: sans-serif;
+    padding-top: 24px;
+    border-top: 1px solid #e5e5e5;
+}
+
+/*main contenst*/
+.main {
+    flex: 1;
+    margin-left: 250px;
+    padding: 60px 72px;
+    max-width: 880px;
+}
+
+/*the pages (my friend helped out here-*/
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.page h1 {
+    font-size: 34px;
+    font-weight: normal;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+}
+
+.page h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 44px 0 14px;
+    padding-top: 28px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.page h3 {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 28px 0 10px;
+    font-family: sans-serif;
+}
+
+.page p {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 18px;
+}
+
+.page ul {
+    margin: 12px 0 20px 20px;
+}
+
+.page ul li {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.page ul li strong {
+    color: #111;
+}
+
+/*images or photos to make it look neat*/
+.photo {
+    margin: 28px 0;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 6px;
+    display: block;
+}
+
+.photo .caption {
+    font-size: 12px;
+    color: #999;
+    margin-top: 8px;
+    font-family: sans-serif;
+}
+
+/*hightlight box settins*/
+.highlight-box {
+    background: #f7f7f7;
+    border-left: 3px solid #111;
+    padding: 20px 24px;
+    margin: 24px 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.highlight-box p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 0;
+}
+
+/*columns*/
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 24px 0;
+}
+
+.col-box {
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.col-box h3 {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    color: #111;
+    margin: 0 0 12px 0;
+}
+
+.col-box p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+    margin: 24px 0;
+    padding-left: 24px;
+    border-left: 2px solid #ddd;
+}
+
+.timeline-item {
+    padding: 0 0 24px 20px;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #111;
+    border-radius: 50%;
+    position: absolute;
+    left: -27px;
+    top: 6px;
+}
+
+.timeline-item .year {
+    font-size: 13px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.timeline-item .desc {
+    font-size: 14px;
+    color: #555;
+    font-family: sans-serif;
+}
+
+/*homepagee stylles*/
+.home-hero {
+    margin-bottom: 48px;
+}
+
+.home-hero .eyebrow {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #aaa;
+    font-family: sans-serif;
+    margin-bottom: 16px;
+}
+
+.home-hero h1 {
+    font-size: 42px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.home-hero p {
+    font-size: 16px;
+    color: #555;
+    max-width: 560px;
+    line-height: 1.8;
+}
+
+.home-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin: 40px 0 48px;
+}
+
+.home-stat {
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.home-stat .number {
+    font-size: 28px;
+    font-weight: normal;
+    font-family: Georgia, serif;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.home-stat .label {
+    font-size: 11px;
+    color: #999;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.home-section-title {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #bbb;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.home-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.home-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.home-card:hover {
+    border-color: #ccc;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.home-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+.home-card .card-body {
+    padding: 18px 20px;
+}
+
+.home-card .card-tag {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #aaa;
+    font-family: sans-serif;
+    margin-bottom: 6px;
+}
+
+.home-card .card-title {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Georgia, serif;
+    color: #111;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.home-card .card-desc {
+    font-size: 13px;
+    color: #888;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.home-card-full {
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 28px;
+    margin-bottom: 48px;
+}
+
+.home-card-full .card-title {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: Georgia, serif;
+    color: #111;
+    margin-bottom: 12px;
+}
+
+.home-card-full p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/*timeline or timexonesss i think*/
+
+.home-timeline-mini {
+    margin-bottom: 48px;
+}
+
+.home-timeline-mini .tl-row {
+    display: flex;
+    align-items: flex-start;
+    padding: 14px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.home-timeline-mini .tl-row:last-child {
+    border-bottom: none;
+}
+
+.home-timeline-mini .tl-year {
+    font-size: 13px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #111;
+    width: 90px;
+    flex-shrink: 0;
+}
+
+.home-timeline-mini .tl-text {
+    font-size: 14px;
+    color: #555;
+    font-family: sans-serif;
+}
+
+.home-explore-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.home-explore-item {
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 22px 20px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.home-explore-item:hover {
+    background: #f7f7f7;
+    border-color: #ccc;
+}
+
+.home-explore-item .explore-num {
+    font-size: 22px;
+    font-family: Georgia, serif;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.home-explore-item .explore-title {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.home-explore-item .explore-desc {
+    font-size: 12px;
+    color: #999;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.home-quote {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 36px 0;
+    margin-bottom: 48px;
+}
+
+.home-quote blockquote {
+    font-size: 18px;
+    font-style: italic;
+    color: #333;
+    line-height: 1.7;
+    max-width: 580px;
+}
+
+.home-quote .quote-attr {
+    font-size: 12px;
+    color: #aaa;
+    font-family: sans-serif;
+    margin-top: 12px;
+    font-style: normal;
+}
+
+/*Mobile/ might also work on the desktop size as well/ im just trying to figure that out cause my friend help out with this one as well*/
+.mobile-header {
+    display: none;
+    padding: 14px 24px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-header .hamburger {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #a4a4a4;
+}
+
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 30;
+}
+
+@media (max-width: 768px) {
+    .mobile-header {
+        display: flex;
+    }
+
+    .sidebar {
+        left: -270px;
+        z-index: 40;
+        transition: left 0.25s ease;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .sidebar-overlay.open {
+        display: block;
+    }
+
+    .main {
+        margin-left: 0;
+        padding: 28px 20px;
+    }
+
+    .page h1 {
+        font-size: 26px;
+    }
+
+    .home-hero h1 {
+        font-size: 30px;
+    }
+
+    .home-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .home-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .home-explore-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+}
+
+.share-btn {
+    width: 100%;
+}
+
+.share-icon {
+    display: block;
+    padding: 8px 14px;
+    margin-bottom: 2px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #666;
+    font-size: 13px;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: all 0.15s;
+
+    background: none;
+    border: 1px solid #e5e5e5;
+    margin: 0 auto;
+}
+
+.share-icon:hover {
+    background: #eee;
+    color: #111;
+}
+
+.share-icon.active {
+    background: #111;
+    color: #fff;
+}
