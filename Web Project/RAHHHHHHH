@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kowloon Walled City</title>
+    <script src="idk.js" ></script>
+    <link rel="stylesheet" href="style2.css" />
+
+</head>
+
+<!--https://emojidb.org/flower-emojis?utm_source=user_search--> <!--This is a link for the emojiss-->
+
+<!--Im also thinkng about changing the fonts more instead of always using sans-serif...maybe Something Fancy for the Titles-->
+
+<body>
+
+    <!--Computer HEader--> <!--kinda confused here still so imma fix it soon-->
+    <!--<div class="desktop-header">
+        <span style="font-family:sans-serif; 
+        font-size:14px; 
+        font-weight:bold; 
+        letter-spacing:2px; 
+        text-transform:uppercase;">
+        Kowloon
+    </span>
+        <button class="hamburger" onclick="toggleSide
+
+REMOVED - the content was tranferred to 'About this website'
+<a id="nav-why" onclick="showPage('Why')">Why Kowloon Walled City</a>
+
+ 
+<!-(—)dont mind this, i just need this for the sentencws
+
+    <!-Mobile header-->
+    <div class="mobile-header">
+        <span style="font-family:'Times New Roman', Times, serif; 
+        font-size:14px; 
+        font-weight:bold; 
+        letter-spacing:2px; 
+        text-transform:uppercase;">
+            Kowloon
+        </span>
+        <button class="hamburger" onclick="toggleSidebar()">☰</button>
+        <!--I used the Trigram For Heaven symbol for toggling the other pages.....yum-->
+
+    </div>
+
+    <!-- ttthe overlayy -->
+    <div class="sidebar-overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+    <div class="layout">
+
+        <!--sidebarssss-->
+
+        <!--showpage helps with revealing the other pages-->
+
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <span style="font-family:'Times New Roman', Times, serif; 
+        font-size:14px; 
+        font-weight:bold; 
+        letter-spacing:2px; 
+        text-transform:uppercase;">
+                    Kowloon:
+                </span>Beyond the myth:The Walled City of Kowloon
+            </div>
+
+            <div class="subtitle">Walled City Project</div>
+
+            <div class="nav-group">
+                <nav>
+                    <a class="active" id="nav-home" onclick="showPage('home')"><strong>Home</strong></a>
+                </nav>
+            </div>
+
+            <div class="nav-group">
+                <div class="nav-label" id="intro">Introduction</div>
+                <nav>
+                    <a id="nav-objective" onclick="showPage('objective')">About this Website</a>
+                    <!--this one used to be Project Objective-->
+                </nav>
+            </div>
+
+            <div class="nav-group">
+                <div class="nav-label" id="history">History</div>
+                <nav>
+                    <a id="nav-origins" onclick="showPage('origins')">Historical Origins</a>
+                    <a id="nav-anarchy" onclick="showPage('anarchy')">Rise of Anarchy</a>
+                    <a id="nav-darkness" onclick="showPage('darkness')">City of Darkness</a>
+                </nav>
+            </div>
+
+            <div class="nav-group">
+                <div class="nav-label" id="thecity">The City</div>
+                <nav>
+                    <a id="nav-life" onclick="showPage('life')">Life Inside The Walls</a>
+                    <a id="nav-demolition" onclick="showPage('demolition')">Demolition & Legacy</a>
+                    <a id="nav-today" onclick="showPage('today')">The Walled City Today</a>
+                </nav>
+            </div>
+
+            <div class="nav-group">
+                <div class="nav-label" id="TG">Travel Guide</div>
+
+                <nav>
+                    <a href="./group_project/Kowloon-Park.html" id="park">Kowloon Walled City Park</a>
+                    <a href="./group_project/Exhibition.html" id="Exhibition">Kowloon Walled City Exhibition</a>
+                    <a href="./group_project/food.html" id="food">Nearby Food Spots(1)</a>
+                    <a href="./group_project/food2.html" id="food2">Nearby Food Spots(2)</a>
+                    <a href="./group_project/Kowloon City attractions.html" id="kwc_attraction">Kowloon City
+                        attractions</a>
+                    <a href="./group_project/Derivative Artworks.html" id="art">Derivative Artworks</a>
+                </nav>
+
+            </div>
+            <div class="nav-group">
+                <div class="nav-label" id="other">others</div>
+                <nav>
+                    <a href="./group_project/Contact Us.html" id="ContactUs">Contact Us</a>
+                </nav>
+            </div>
+
+            <div class="footer-note">Kowloon Walled City<br>Hong Kong °❀*</div>
+            <!--Added this symbol cause it looks cute/ can be changed if you want-->
+        </aside>
+
+        <!--THE MAIIIIIIIIN CONTENTOOO-->
+        <!--also need to add more pictures soon to support the indo. visuals are important afterl all-->
+        <div class="main">
+
+            <!-- THis is where it begins~ the homepageee / i lowkey just copy pasted some of the info in the internet when researching some stuff-->
+            <div class="page active" id="page-home">
+
+                <div class="home-hero">
+                    <div class="eyebrow">Hong Kong · 1847-1994</div>
+                    <h1>The Walled City<br>of Kowloon</h1>
+
+
+                    <p>The most densely populated place on Earth. A city within a city where there was no laws, no
+                        building codes, and over 33,000 people living on 6.5 acres of land. This is its story and
+                        history.</p>
+                </div>
+
+                <!--The numbers of people, buildings, land and years -->
+                <div class="home-stats">
+                    <div class="home-stat">
+                        <div class="number">33,000 back then</div>
+                        <div class="label">Peak Population</div>
+                    </div>
+                    <div class="home-stat">
+                        <div class="number">Over 350+</div>
+                        <div class="label">Buildings</div>
+                    </div>
+                    <div class="home-stat">
+                        <div class="number">6.5</div>
+                        <div class="label">acres of Land</div>
+                    </div>
+                    <div class="home-stat">
+                        <div class="number">146-147</div>
+                        <!--Settled	c. 1898 / Demolished	1993–1994    still kinda unsure about this part-->
+                        <div class="label">Years Existed</div>
+                    </div>
+                </div>
+
+                <!-- the Featured Cards -->
+                <div class="home-section-title">Featured</div>
+                <div class="home-cards">
+                    <div class="home-card" onclick="showPage('darkness')">
+                        <img src="Nice view of the city.png" alt="City at night">
+                        <div class="card-body">
+                            <div class="card-tag">History</div>
+                            <div class="card-title">City of Darkness</div>
+                            <div class="card-desc">The unprecedented growth, triad rule, and architectural anarchy from
+                                1945 to the 1980s.</div>
+                        </div>
+                    </div>
+                    <div class="home-card" onclick="showPage('life')">
+                        <img src="Walled off i guess.png" alt="Building close-up">
+                        <div class="card-body">
+                            <div class="card-tag">The City</div>
+                            <div class="card-title">Life Inside the Walls</div>
+                            <div class="card-desc">Infrastructure, unregulated services, and the surprising community
+                                bonds that held it together.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--timeline/ history-->
+                <div class="home-section-title">Timeline</div>
+                <div class="home-timeline-mini">
+                    <div class="tl-row">
+                        <div class="tl-year">960-1279</div>
+                        <div class="tl-text">Song Dynasty establishes a military outpost to monitor the salt trade</div>
+                    </div>
+
+                    <div class="tl-row">
+                        <div class="tl-year">1847</div>
+                        <div class="tl-text">Qing Dynasty completes the walled fortress with yamen, barracks, and stone
+                            walls</div>
+                    </div>
+
+                    <div class="tl-row">
+                        <div class="tl-year">1898</div>
+                        <div class="tl-text">New Territories leased to Britain; the Walled City is left in legal limbo
+                        </div>
+                    </div>
+
+                    <div class="tl-row">
+                        <div class="tl-year">1940s</div>
+                        <div class="tl-text">Refugees flood in after WWII and the Chinese Civil War; construction
+                            accelerates</div>
+                    </div>
+                    <div class="tl-row">
+                        <div class="tl-year">1987</div>
+                        <div class="tl-text">Sino-British agreement announces demolition; eviction process begins</div>
+                    </div>
+                    <div class="tl-row">
+                        <div class="tl-year">1993-94</div>
+                        <div class="tl-text">Buildings demolished; site transformed into Kowloon Walled City Park</div>
+                    </div>
+                </div>
+
+
+
+
+                <!--More infooos--> <!--still thinking if i should add images to it-->
+                <div class="home-section-title">Explore</div>
+                <div class="home-explore-grid">
+                    <div class="home-explore-item" onclick="showPage('origins')">
+                        <div class="explore-num">01</div>
+                        <div class="explore-title">Historical Origins</div>
+                        <div class="explore-desc">From Song Dynasty outpost to Qing Dynasty fortress.</div>
+                    </div>
+                    <div class="home-explore-item" onclick="showPage('anarchy')">
+                        <div class="explore-num">02</div>
+                        <div class="explore-title">Rise of Anarchy</div>
+                        <div class="explore-desc">The power vacuum that created a lawless enclave.</div>
+                    </div>
+                    <div class="home-explore-item" onclick="showPage('demolition')">
+                        <div class="explore-num">03</div>
+                        <div class="explore-title">Demolition & Legacy</div>
+                        <div class="explore-desc">The end of the city and what remains today.</div>
+                    </div>
+                </div>
+
+
+                <!--quoting-->
+                <div class="home-quote">
+                    <blockquote>"“Quite often, houses were built by building on to the next building, punching out walls
+                        to use their staircases,” said Girard. “A lot of them didn't even have access to air or open
+                        space, because they were enclosed in the centre of the structures."</blockquote>
+                    <div class="quote-attr">— a photographer named Greg Girard, who spent years with a collaborator, Ian
+                        Lambot, documenting this unique Hong Kong city, and remembers being amazed when he first saw it.
+                    </div>
+                </div>
+
+                <!--About this project/ ABOUT US :00-->
+                <div class="home-card-full">
+                    <div class="card-title">About Us</div>
+                    <p>This website was developed by two students who are studying website development. We are applying
+                        the techniques and skills learned in our coursework to build this website, turning the Walled
+                        City of Kowloon's unconventional cultural content into a captivating, mobile-friendly website
+                        that will appeal to all interested parties, particularly tourists.</p>
+                </div>
+            </div>
+
+
+            <!--the intro, reassons-->
+            <div class="page" id="page-objective">
+                <h1>Project Objective</h1>
+
+                <div class="highlight-box">
+                    <p>This is a tourism website about the Kowloon Walled City. Within this site, visitors will learn
+                        about its history, explore related artistic works, and discover nearby travel attractions in the
+                        Kowloon area. Through this website, you will experience the unique charm of the Walled City and
+                        be captivated by its enduring appeal.
+                    </p>
+                </div>
+
+                <p>The Kowloon Walled City was one of the most extraordinary urban phenomena in modern history. Yet its
+                    story remains fragmented, told through scattered photographs, academic papers, and word of mouth.
+                    This project brings that narrative together in one place.</p>
+
+                <h2>Why the Kowloon Walled City?</h2>
+
+                <div class="highlight-box">
+                    <p>Its existence is a myth to many outsiders. It was a place of legend, rumored to be a lawless den
+                        of triads and unlicensed dentists. It was a city within a city, with its own rules, economy, and
+                        social standards. The Walled Kowloon City is an example of a demolished site where life has
+                        forgotten its customs.</p>
+                </div>
+
+                <h2>What This Site Will Cover</h2>
+                <ul>
+                    <li><strong>Historical Origins</strong> — From Song Dynasty outpost to Qing Dynasty fortress</li>
+                    <li><strong>Rise of Anarchy</strong> — The power vacuum that created a lawless enclave</li>
+                    <li><strong>City of Darkness</strong> — Unprecedented growth and triad rule (1945-1980s)</li>
+                    <li><strong>Life Inside the Walls</strong> — Infrastructure, unregulated services, and community
+                        bonds</li>
+                    <li><strong>Demolition & Legacy</strong> — The end of the city and what remains</li>
+                    <li><strong>The Walled City Today</strong> — Preserved relics, the park, and cultural significance
+                    </li>
+                </ul>
+
+
+
+            </div>
+
+
+            <div class="page" id="page-why">
+                <h1>Why the Kowloon Walled City?</h1>
+
+                <p>To the outside world, the Kowloon Walled City was a legend — a place of lawless myth and urban chaos.
+                    But within its walls, it was something far more complex: a self-governing community with its own
+                    rules, its own economy, and its own social standards.</p>
+
+                <div class="highlight-box">
+                    <p>The Walled City was a place where the conventional laws of society broke down, yet a different
+                        kind of order emerged — one built not by governments, but by the people who lived there.</p>
+                </div>
+
+                <p>It was simultaneously a haven and a horror — a refuge for those who had nowhere else to go, and a
+                    haven for those who operated outside the law. It thrived without police, without building codes,
+                    without any central authority. And yet, it functioned.</p>
+
+                <p>Today, the site is a public park. The buildings are gone, the residents relocated, the chaos
+                    silenced. What remains is an abandoned space that has lost the customs and culture that once defined
+                    it — a place that lives on only in memory and photographs.</p>
+
+                <p>This project asks: <strong>What can we learn from a place that shouldn't have worked, but
+                        did?</strong></p>
+            </div>
+
+
+
+
+            <!--more historyyyy-->
+            <div class="page" id="page-origins">
+                <h1>Historical Origins</h1>
+                <p style="font-family:sans-serif; 
+                font-size:12px; 
+                color:#999; 
+                letter-spacing:1px; 
+                text-transform:uppercase; 
+                margin-bottom:8px;">The Beginning of a dystopian City
+                </p>
+
+                <p>The story of the Kowloon Walled City begins long before the anarchy it became famous for. </p>
+
+                <div class="photo">
+                    <img src="history old photo.jpg" alt="history photo">
+                    <div class="caption">Kowloon Walled City, a fascinating area in Hong Kong, shows us the interesting
+                        twists of history, migration, and city life. This crowded settlement was special because it was
+                        a part of China right in the middle of the British colony. Its story is one of survival, chaos,
+                        and major transformation.</div>
+                </div>
+
+                <p>Its roots trace back nearly a thousand years, to a time when the area served as a modest military
+                    outpost under the Song Dynasty.</p>
+
+                <h2>Song Dynasty: Monitoring the Salt Trade</h2>
+                <p>During the Song Dynasty (960-1279), a military outpost was established in the Kowloon area to monitor
+                    and regulate the lucrative salt trade. The site's strategic position near the coast made it an ideal
+                    sentry point against pirates and smugglers.</p>
+
+                <h2>Qing Dynasty: The Fortress Walls</h2>
+                <p>In the mid-19th century, the Qing government recognized the need for a stronger defensive presence.
+                    Construction of a proper walled fortress began, and the Kowloon Walled City was completed in 1847.
+                    The fortified structure included a yamen (government office), barracks, and thick stone walls
+                    designed to repel invasion.</p>
+                <p>However, the fortress was soon tested by internal conflict. Rebellions in the region damaged parts of
+                    the structure, and the Qing government's ability to maintain it steadily weakened.</p>
+
+                <h2>1898: The Treaty That Changed Everything</h2>
+                <p>The turning point came with the Convention for the Extension of Hong Kong Territory in 1898, which
+                    leased the New Territories to Britain for 99 years. The Walled City was initially excluded from the
+                    lease — it remained under Chinese jurisdiction. But when British forces moved in, the Chinese
+                    officials abandoned the fort, leaving it in a legal grey zone that would persist for nearly a
+                    century.</p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="year">Song Dynasty (960-1279)</div>
+                        <div class="desc">Military outpost established to monitor the salt trade</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">1847</div>
+                        <div class="desc">Qing Dynasty completed the walled fortress</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="year">1898</div>
+                        <div class="desc">New Territories that was leased to Britain; Walled City left in legal limbo
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="share-btn">
+                    <button type="button" class="btn share-icon" id="copy-link">share</button>
+                </div> -->
+
+
+            </div>
+
+
+
+
+            <!--THe risse to anarchy-->
+            <div class="page" id="page-anarchy">
+                <h1>Rise of Anarchy</h1>
+                <p style="font-family:sans-serif; 
+                font-size:12px; 
+                color:#a6a6a6; 
+                letter-spacing:1px; 
+                text-transform:uppercase; 
+                margin-bottom:8px;">A Lawless Blackhole of Vice</p>
+
+                <p>The transformation of the Walled City from a military fort into a lawless enclave was not sudden — it
+                    was the result of decades of political abandonment and neglect.</p>
+
+                <div class="photo">
+                    <img src="Aerial view.png" alt="Aerial view of Kowloon Walled City">
+                    <div class="caption">Aerial views showing the dense Walled City surrounded by modern Kowloon — a
+                        world within a world.</div>
+                </div>
+
+                <h2>British Occupation and Retreat</h2>
+                <p>After the 1898 treaty, the British initially asserted control over the Walled City but soon found it
+                    more trouble than it was worth. The Chinese government still claimed sovereignty, while the British
+                    had little interest in governing the small, dilapidated site. By the early 20th century, both sides
+                    had effectively walked away.</p>
+
+                <h2>The Power Vacuum</h2>
+                <p>With no government willing to take responsibility, the Walled City became a true no-man's-land. No
+                    police patrolled its streets. No building codes regulated its construction. No health inspectors
+                    checked its factories. Into this vacuum stepped those who thrived in the absence of authority —
+                    triads, gamblers, drug operators, and anyone else who preferred to live beyond the reach of the law.
+                </p>
+
+                <h2>World War II</h2>
+                <p>The Japanese occupation of Hong Kong during World War II further accelerated the Walled City's
+                    decline. The occupying forces dismantled parts of the original stone walls for building materials,
+                    erasing the last physical remnants of its military heritage. By the end of the war, the Walled City
+                    was an open, undefended space — ripe for the chaos that would follow.</p>
+
+                <!-- <div class="share-btn">
+                    <button type="button" class="btn share-icon" id="copy-link">share</button>
+                </div> -->
+            </div>
+
+            <!--CITY OF DARKNESS...bleh -->
+            <div class="page" id="page-darkness">
+                <h1>City of Darkness</h1>
+
+                <div class="photo">
+                    <img src="rundown buildings.jpg" alt="rundown">
+                    <div class="caption">'The economy ran sort of on it's own. They had bakeries, barber shops, noodle
+                        houses, tea houses, craftsmen, limited use doctors (like non licensed dentists, and traditional
+                        medicine), etc. Basically anything you'd find in a city, just crammed into this tiny little area
+                        of buildings.' - jgopp, a User in Reddit who has visited the site</div>
+                </div>
+
+                <p
+                    style="font-family:'Times New Roman', Times, serif; font-size:20px; color:#000000; letter-spacing: spacing 2px;; text-transform:uppercase; margin: bottom 10px;;">
+                    Unprecedented Growth (1945-1980s)</p>
+
+                <p>In the decades following World War II, the Walled City underwent a transformation unlike anything the
+                    world had seen before. What had been a modest squatter settlement exploded into a towering,
+                    self-built megastructure.</p>
+
+                <h2>Refugee Influx</h2>
+                <p>After the Chinese Civil War and the establishment of the People's Republic of China in 1949, waves of
+                    refugees flooded into Hong Kong. Many found their way to the Walled City, drawn by the absence of
+                    rent controls, building regulations, and immigration enforcement. The population swelled from a few
+                    hundred to tens of thousands in a matter of years.</p>
+
+                <h2>Triad Rule</h2>
+                <p>With the population boom came organized crime. Triad societies — particularly the 14K and Sun Yee On
+                    — established firm control over the Walled City. They ran gambling dens, opium dens, and vice
+                    operations from the upper floors, while residents on the lower levels tried to live normal lives
+                    below. The triads became the de facto authority: they resolved disputes, collected "rent," and
+                    maintained a rough order that served their interests.</p>
+
+                <h2>Architectural Anarchy</h2>
+                <p>With no building codes to follow, residents built upward with reckless abandon. Structures rose to 14
+                    stories or more, connected by a chaotic network of staircases, rooftops, and narrow alleyways.
+                    Buildings were constructed inches apart, blocking out sunlight to the lower levels. Electrical
+                    wiring and water pipes formed a tangled web on every exterior wall. It was architecture without
+                    architects — and it was terrifying, beautiful, and entirely unique.</p>
+
+                <!-- <div class="share-btn">
+                    <button type="button" class="btn share-icon" id="copy-link">share</button>
+                </div> -->
+            </div>
+
+
+
+
+
+            <!--life inside the walls -->
+            <div class="page" id="page-life">
+                <h1>Life Inside the Walls</h1>
+
+                <div class="photo">
+                    <img src="life.jpg" alt="life">
+                    <div class="caption">'The economy ran sort of on it's own. They had bakeries, barber shops, noodle
+                        houses, tea houses, craftsmen, limited use doctors (like non licensed dentists, and traditional
+                        medicine), etc. Basically anything you'd find in a city, just crammed into this tiny little area
+                        of buildings.' - jgopp, a User in Reddit who has visited the site</div>
+                </div>
+
+                <p>Despite its fearsome reputation, the reality of daily life inside the Walled City was more nuanced
+                    than the headlines suggested. Yes, there was crime and squalor — but there were also schools,
+                    temples, post offices, and a strong sense of community.</p>
+
+                <h2>Infrastructure</h2>
+                <p>The Walled City had only eight official municipal water taps serving tens of thousands of residents.
+                    Water was rationed and carried by bucket to upper floors. Electricity was siphoned from the
+                    surrounding city grid through illegal connections — a web of wires that hung like vines from every
+                    surface. Despite this, residents had refrigerators, televisions, and even air conditioners.</p>
+
+                <h2>Unregulated Services</h2>
+                <p>The Walled City was home to a thriving informal economy. Unlicensed dentists offered cheap dental
+                    work in small clinics — many trained in mainland China but unrecognized in Hong Kong. Food factories
+                    produced noodles, fish balls, and other goods that were sold outside the walls. Garment workshops
+                    churned out clothing. None of these businesses had permits, but they were essential to the local
+                    economy.</p>
+
+                <h2>Community and Social Bonds</h2>
+                <p>Perhaps the most surprising aspect of the Walled City was its community. Residents looked out for
+                    each other. Children played on rooftops while elders chatted in narrow alleyways. Informal mutual
+                    aid networks developed — neighbors helped neighbors with childcare, repairs, and mediation. In the
+                    absence of government, the people of the Walled City built their own society from the ground up.</p>
+
+                <!-- <div class="share-btn">
+                    <button type="button" class="btn share-icon" id="copy-link">share</button>
+                </div> -->
+            </div>
+
+            <!--when it got destroyed and its legacy-->
+            <div class="page" id="page-demolition">
+                <h1>Demolition & Legacy</h1>
+
+                <div class="photo">
+                    <img src="ruined.jpg" alt="ruined">
+                    <div class="caption">The Sino-British Joint Declaration in 1984 laid the groundwork for the city's
+                        demolition. The mutual decision by the two governments to tear down the walled city was
+                        announced on 14 January 1987.</div>
+                </div>
+
+                <p>The end of the Walled City came not with a bang, but with a long, slow process of negotiation,
+                    eviction, and finally, demolition.</p>
+
+                <h2>The Sino-British Joint Declaration</h2>
+                <p>In 1984, the Sino-British Joint Declaration set the stage for Hong Kong's return to Chinese
+                    sovereignty in 1997. With the political future settled, both governments finally found common ground
+                    on the Walled City's fate. In 1987, they announced that the site would be cleared and transformed
+                    into a public park.</p>
+
+                <h2>Eviction and Demolition</h2>
+                <p>The eviction process was prolonged and emotional. Over 33,000 residents were displaced between 1987
+                    and 1992. Many had lived in the Walled City their entire lives. Some resisted; others accepted
+                    government compensation and resettlement packages. By 1993, the last residents were gone, and
+                    demolition began. The buildings — decades of informal architecture — were reduced to rubble in a
+                    matter of months.</p>
+
+                <div class="highlight-box">
+                    <p>Demolished in 1993-1994, the Walled City left behind not just physical rubble, but a cultural
+                        legacy that continues to fascinate architects, filmmakers, writers, and urbanists around the
+                        world.</p>
+                </div>
+
+                <!-- <div class="share-btn">
+                    <button type="button" class="btn share-icon" id="copy-link">share</button>
+                </div> -->
+            </div>
+
+            <!--THe walled city today or now-->
+            <div class="page" id="page-today">
+                <h1>The Walled City Today</h1>
+
+                <div class="photo">
+                    <img src="kowloon walled city exhinition.jpg" alt="exhibition">
+
+                    <p>Where the Walled City once stood, there is now a peaceful park. But echoes of the past remain...
+                        in preserved relics, in the layout of the grounds, and in the cultural memory of a place unlike
+                        any other.</p>
+
+                    <!--i might add more photos like here for example/ and yes the stuff here was kinda copy pasted from the internet cause we're runnning out of time TOT-->
+
+                    <h2>Preserved Relics and Artifacts</h2>
+                    <p>Several artifacts from the original Walled City have been preserved within the park grounds.
+                        These include stone fragments, old signage, and foundations that mark where buildings once
+                        stood. They serve as quiet reminders of the dense, chaotic community that existed here.</p>
+
+                    <h2>The Yamen Building</h2>
+                    <p>The most significant surviving structure is the Yamen — the old Qing Dynasty government office
+                        that predated the Walled City's anarchic era. Restored and preserved, it now stands as the
+                        park's centerpiece, a physical link to the site's military origins.</p>
+
+                    <h2>The South Gate</h2>
+                    <p>Excavations during the park's construction uncovered the foundations of the original South Gate —
+                        the stone entrance to the Qing fortress. These remains have been preserved in situ and are
+                        visible to visitors today.</p>
+
+                    <h2>Cultural Icon</h2>
+                    <p>Beyond the physical site, the Walled City lives on as a cultural icon. It has inspired countless
+                        films, books, video games, and architectural studies. Its image — the impossibly dense, towering
+                        blocks connected by a web of pipes and wires — has become a visual shorthand for urban dystopia
+                        and the resilience of community.</p>
+
+                    <div class="two-col">
+                        <div class="col-box">
+                            <h3>Culture Significance</h3>
+                            <p>The Walled City represents a unique chapter in urban history — a self-built,
+                                self-governing community that operated entirely outside conventional structures of
+                                power. Its legacy challenges our assumptions about what a city needs to function.</p>
+                        </div>
+                        <div class="col-box">
+                            <h3>Tourist Potential</h3>
+                            <p>The Kowloon Walled City Park attracts visitors from around the world. Interpretive signs,
+                                preserved relics, and the restored Yamen offer a tangible connection to the past —
+                                making the site both a memorial and a destination.</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="share-btn">
+                        <button type="button" class="btn share-icon" id="copy-link">share</button>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+
+</body>
+
+</html>
